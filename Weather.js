@@ -1,12 +1,12 @@
 import React from "react"
-import { View, Text, StyleSheet } from "react-natvie"
+import { View, Text, StyleSheet } from "react-native"
 import PropTypes from "prop-types";
 
 
 
 export default function Weather({ temp }) {
     return (
-        <View styles={styles.container}>
+        <View style={styles.container}>
             <Text>{temp}</Text>
         </View>
     )
@@ -19,7 +19,7 @@ Weather.propTypes = {
 const styles = StyleSheet.create({
     container:{
         flex : 1,
-        jstifyContent: "center",
-        alingItems:"center"
+        justifyContent: "center",
+        alignItems:"center"
     }
 })
